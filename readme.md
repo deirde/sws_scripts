@@ -1,6 +1,6 @@
 # SWS_SCRIPTS #
 
-Specs
+Description
 -----
 Simple shell scripts to automate tedious routine procedures about the websites development and maintenance.<br/>
 Rename the file _config.sample.sh in _config.sh and fill it with the correct values.<br/>
