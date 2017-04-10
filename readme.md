@@ -2,7 +2,7 @@
 
 Specs
 -----
-Simple shell scripts to automize tedious routine procedures about the websites development and maintenance.
+Simple shell scripts to automate tedious routine procedures about the websites development and maintenance.
 
 Rename the file _config.sample.sh in _config.sh and fill it with the correct values.
 
