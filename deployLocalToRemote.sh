@@ -5,7 +5,6 @@ echo "---------- SETUP, CHECK IT BEFORE CONFIRM ----------"
 echo "REMOTE_HOST:" $REMOTE_HOST
 echo "REMOTE_USERNAME:" $REMOTE_USERNAME
 echo "REMOTE_PASSWORD:" $REMOTE_PASSWORD
-echo "REMOTE_FOLDER:" $REMOTE_FOLDER
 echo "DEPLOY_LOCAL_DIR:" $DEPLOY_LOCAL_DIR
 echo "DEPLOY_REMOTE_DIR:" $DEPLOY_REMOTE_DIR
 echo "-------------------------------------------------"
