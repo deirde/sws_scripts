@@ -4,7 +4,7 @@ Description
 -----
 Simple shell scripts to automate tedious routine procedures about the websites development and maintenance.<br/>
 Rename the file _config.sample.sh in _config.sh and fill it with the correct values.<br/>
-A root access and the services curlftpfs and sshfs are mandatory.
+A root access and the services curlftpfs, sshfs and lftp are mandatory.
 
 Features
 --- 
