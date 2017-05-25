@@ -22,7 +22,7 @@ if [ "$REPLY" == "Y" ]; then
 open $REMOTE_HOST
 user $REMOTE_USERNAME $REMOTE_PASSWORD
 lcd $DEPLOY_LOCAL_DIR
-mirror --continue --delete --verbose $DEPLOY_LOCAL_DIR $DEPLOY_REMOTE_DIR
+mirror --continue --delete --verbose $DEPLOY_REMOTE_DIR $DEPLOY_LOCAL_DIR
 bye
 "
     fi
