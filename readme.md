@@ -8,9 +8,9 @@ The root development server access and the services curlftpfs, sshfs and lftp ar
 
 Features
 --- 
-. Import and export local database<br/>
-. Import and export remote database<br/>
-. Find and replace strings into database<br/>
+. Import and dump local database<br/>
+. Import and dump remote database<br/>
+. Find and replace strings anywhere in database tables<br/>
 . File mirroring from local to remote (FTP and SFTP)<br/>
 . File mirroring from remote to local (FTP and SFTP)<br/>
 . Mount and unmount remote filesystem (FTP and SSH)<br/>
