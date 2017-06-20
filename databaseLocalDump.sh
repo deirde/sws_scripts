@@ -14,6 +14,7 @@ echo
 read -p "Are you sure to dump the local database? [Y/n]"
 echo
 if [ "$REPLY" == "Y" ]; then
+    mkdir -p $DATABASE_LOCAL_DUMP_FOLDER
     TIMESTAMP=$(date "+%Y%m%d%H%M%S")
     mysqldump -u $DATABASE_LOCAL_USERNAME -p$DATABASE_LOCAL_PASSWORD $DATABASE_LOCAL_NAME > $DATABASE_LOCAL_DUMP_FOLDER$DATABASE_LOCAL_NAME"_"$TIMESTAMP.sql
     gzip -v $DATABASE_LOCAL_DUMP_FOLDER$DATABASE_LOCAL_NAME"_"$TIMESTAMP.sql
