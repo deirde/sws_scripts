@@ -1,5 +1,5 @@
 #!/bin/bash
-source _config.sh
+source ./_config.sh
 
 echo "---------- SETUP, CHECK IT BEFORE CONFIRM ----------"
 echo "DATABASE_LOCAL_HOST:" $DATABASE_LOCAL_HOST
