@@ -8,6 +8,8 @@ echo "DATABASE_REMOTE_USERNAME:" $DATABASE_REMOTE_USERNAME
 echo "DATABASE_REMOTE_PASSWORD:" $DATABASE_REMOTE_PASSWORD
 echo "DATABASE_LOCAL_DUMP_FOLDER: " $DATABASE_LOCAL_DUMP_FOLDER
 echo "-------------------------------------------------"
+echo "Attention: the remote host must allow the connections from this host."
+echo "-------------------------------------------------"
 echo
 #---------------------------------------------------
 
