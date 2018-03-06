@@ -23,3 +23,4 @@ LOCAL_PUBLIC_DIR="/home/my-website/httpdocs/"
 LOCAL_MOUNT_FOLDER="/home/my-website.com/.rs/mount/"
 DEPLOY_LOCAL_DIR="/home/my-website.com/public_html/wp-content/themes/"
 DEPLOY_REMOTE_DIR="/home/my-website.com/public_html/wp-content/themes/"
+DEPLOY_NO_RECURSION="--no-recursion"  #Empty or --no-recursion
