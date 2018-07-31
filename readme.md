@@ -14,4 +14,4 @@ Features
 . File mirroring from local to remote (FTP and SFTP)<br/>
 . File mirroring from remote to local (FTP and SFTP)<br/>
 . Mount and unmount remote filesystem (FTP and SSH)<br/>
-. Sync the remote environment with the local one (files and database)<br/>
+. Sync the remote environment with the local one (files and database), requires WP-CLI.<br/>
