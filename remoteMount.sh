@@ -1,28 +1,26 @@
 #!/bin/bash
 source ./_config.sh
 
-echo "---------- SETUP, CHECK IT BEFORE CONFIRM ----------"
-echo "REMOTE_HOST:" $REMOTE_HOST
-echo "REMOTE_USERNAME:" $REMOTE_USERNAME
-echo "REMOTE_PASSWORD:" $REMOTE_PASSWORD
-echo "REMOTE_FOLDER:" $REMOTE_FOLDER
-echo "LOCAL_MOUNT_FOLDER:" $LOCAL_MOUNT_FOLDER
-echo "-------------------------------------------------"
+echo "-------------------- SETUP, CHECK IT BEFORE CONFIRM --------------------"
+echo "DEPLOY_CONN_TYPE:" $DEPLOY_CONN_TYPE
+echo "DEPLOY_RMT_HOST:" $DEPLOY_RMT_HOST
+echo "DEPLOY_RMT_UID:" $DEPLOY_RMT_UID
+echo "DEPLOY_RMT_PSW:" $DEPLOY_RMT_PSW
+echo "DEPLOY_RMT_DIR:" $DEPLOY_RMT_DIR
+echo "LC_MOUNT_DIR:" $LC_MOUNT_DIR
+echo "------------------------------------------------------------------------"
 echo
-#---------------------------------------------------
-
 read -p "Are you sure to mount the remote file system? [Y/n]"
 echo
 if [ "$REPLY" == "Y" ]; then
-    mkdir -p $LOCAL_MOUNT_FOLDER
+    mkdir -p $LC_MOUNT_DIR
     
-    if [ $REMOTE_FTP_OR_SSH == "SSH" ]; then
-        sshfs -o allow_other $REMOTE_USERNAME@$REMOTE_HOST:$REMOTE_FOLDER $LOCAL_MOUNT_FOLDER
+    if [ $DEPLOY_CONN_TYPE == "SSH" ]; then
+        sshfs -o allow_other $DEPLOY_RMT_UID@$DEPLOY_RMT_HOST:$DEPLOY_RMT_DIR $LC_MOUNT_DIR
     else
-        curlftpfs -o user="$REMOTE_USERNAME:$REMOTE_PASSWORD" $REMOTE_HOST $LOCAL_MOUNT_FOLDER
+        curlftpfs -o user="$DEPLOY_RMT_UID:$DEPLOY_RMT_PSW" $DEPLOY_RMT_HOST $LC_MOUNT_DIR
     fi
-    
-    echo "Done! You should check the mount folder now here: $LOCAL_MOUNT_FOLDER"
+    echo "Done! You should check the mount folder now here: $LC_MOUNT_DIR"
     echo "Remeber to unmount after the job."
 else
     echo "Nothing has been done, bye bye.";
