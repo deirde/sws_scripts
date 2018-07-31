@@ -55,7 +55,7 @@ bye
         wp config set DB_USER "$DB_LC_UID" --allow-root
         wp config set DB_PASSWORD "$DB_LC_PSW" --allow-root
         wp cache flush --allow-root
-        wp user create admin info@localhost --user_pass=admin --role=administrator --skip-plugins --allow-root
+        wp user create admin info@localhost.me --user_pass=admin --role=administrator --skip-plugins --allow-root
         cd -
         echo "ATTENTION! A new admin user has been created, username: admin, password: admin. Remember to update its credentials."
         echo "YAY! Deploy completed."

@@ -3,11 +3,11 @@ source ./_config.sh
 
 echo "-------------------- SETUP, CHECK IT BEFORE CONFIRM --------------------"
 echo "DEPLOY_CONN_TYPE:" $DEPLOY_CONN_TYPE
+echo "DEPLOY_RMT_DIR:" $DEPLOY_RMT_DIR
 echo "DEPLOY_RMT_HOST:" $DEPLOY_RMT_HOST
 echo "DEPLOY_RMT_UID:" $DEPLOY_RMT_UID
 echo "DEPLOY_RMT_PSW:" $DEPLOY_RMT_PSW
 echo "DEPLOY_LC_DIR:" $DEPLOY_LC_DIR
-echo "DEPLOY_RMT_DIR:" $DEPLOY_RMT_DIR
 echo "DEPLOY_NO_RECURSION:" $DEPLOY_NO_RECURSION
 echo "------------------------------------------------------------------------"
 echo
