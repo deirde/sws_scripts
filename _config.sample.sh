@@ -6,7 +6,7 @@ PERMS_RMT_GROUP="root"
 
 #-------------------- PROJECT DIRS
 LC_PROJECT_DIR="/home/myproject.com"
-LC_PUBLIC_DIR="/home/myproject.comg/httpdocs/"
+LC_PUBLIC_DIR="/home/myproject.com/httpdocs/"
 
 #-------------------- LOCAL DATABASE CONNECTION
 DB_LC_HOST="localhost"
