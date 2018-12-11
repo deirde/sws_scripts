@@ -22,7 +22,7 @@ if [ "$REPLY" == "Y" ]; then
 open $DEPLOY_RMT_HOST
 user $DEPLOY_RMT_UID $DEPLOY_RMT_PSW
 lcd $DEPLOY_LC_DIR
-mirror --continue --delete --verbose $DEPLOY_NO_RECURSION $DEPLOY_RMT_DIR $DEPLOY_LC_DIR
+mirror -p --continue --delete --verbose $DEPLOY_NO_RECURSION $DEPLOY_RMT_DIR $DEPLOY_LC_DIR
 bye
 "
     fi
