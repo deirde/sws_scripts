@@ -20,7 +20,7 @@ if [ "$REPLY" == "Y" ]; then
     else
         lftp -f "
 open $DEPLOY_RMT_HOST
-user $DEPLOY_RMT_UID $DEPLOY_RMT_PSW
+user $DEPLOY_RMT_UID "$DEPLOY_RMT_PSW"
 lcd $DEPLOY_LC_DIR
 mirror --continue --delete --parallel=10 $DEPLOY_NO_RECURSION $DEPLOY_RMT_DIR $DEPLOY_LC_DIR
 bye
